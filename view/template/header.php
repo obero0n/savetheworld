@@ -21,12 +21,28 @@
 <body>
 
   <header>
-    <div class="jumbotron jumbotron-fluid bgfront">
+    <div class="jumbotron jumbotron-fluid bgfront h-50 m-0">
       <div class="container">
         <h1 class="display-1 text-light">Sauvons la planète</h1>
         <p class="lead text-light">Stop au réchauffement climatique.</p>
       </div>
+
+
+
     </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bgdarkside">
+<a class="navbar-brand text-white" href="">Index</a>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup ">
+  <div class="navbar-nav">
+    <a class="nav-item nav-link jedi btn btn-outline-light mr-2" href="home">Table des benevoles</a>
+    <a class="nav-item nav-link jedi btn btn-outline-light mr-2" href="addUser">Insciption d'un benevole</a>
+        <a class="nav-item nav-link jedi btn btn-outline-light mr-2" href="message">Mes messages</a>
+    <a class="nav-item nav-link jedi btn btn-outline-light mr-2" href="logout">Deconnexion</a>
+  </div>
+</div>
+</nav>
+
   </header>
 
   <main>

@@ -1,5 +1,5 @@
 <?php include "view/template/header.php"; ?>
-<a href="logout">deconnexion</a>
+
 <?php include "view/form/sortByForm.php"; ?>
 
 <div class="container">

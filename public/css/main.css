@@ -103,13 +103,25 @@ textarea {
 
    .bgfront{
 
-   background-color: #14695D;
+   background-image: linear-gradient(to right, #11998e, #38ef7d)
+   }
+   .bgdarkside{
+     background-color: #11998e;
+   }
+
+   .bgjediside{
+     background-color: #38ef7d;
+   }
+
+   .jedi{
+     color: #38ef7d;
    }
 
    h1{
      font-family: 'Reenie Beanie', cursive;
 
    }
+
 
 
 

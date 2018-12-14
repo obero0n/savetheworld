@@ -33,7 +33,9 @@ function logoutUser(){
   if (isLogged()) {
     logout();
     redirectTo("");
-
+  }
+  else {
+    redirectTo("");
   }
 }
 
@@ -47,7 +49,7 @@ function showUser() {
   else {
     $user = getUser();
   }
-  var_dump($_SESSION);
+
   require "view/homeView.php";
 }
 
@@ -73,8 +75,6 @@ function showAddUser(){
       header("Location: home");
       exit;
     }
-    header("Location: home");
-    exit;
   }
   require "view/addUserView.php";
 }
@@ -114,5 +114,6 @@ function showUpdate(){
   }
   require "view/updateUserView.php";
 }
+
 
  ?>

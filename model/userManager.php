@@ -20,7 +20,7 @@ function getOneUser($id) {
 function addUser($user)
 {
   $db = getDataBase();
-  $query = $db->prepare('INSERT INTO user(last_name, first_name, age, comment, availability, street, city) VALUES(:last_name, :first_name, :age, :comment, :availability, :street, :city)');
+  $query = $db->prepare('INSERT INTO user(last_name, first_name, age, comment, availability, street, city, pseudo, password) VALUES(:last_name, :first_name, :age, :comment, :availability, :street, :city, :pseudo, :password)');
   $result = $query->execute(array(
       "last_name" => $user["last_name"],
       "first_name" => $user["first_name"],
@@ -28,7 +28,10 @@ function addUser($user)
       "comment" => $user["comment"],
       "availability" => $user["availability"],
       "street" => $user["street"],
-      "city" => $user["city"]));
+      "city" => $user["city"],
+      "pseudo" => $user["pseudo"],
+      "password" => $user["password"]));
+
   $query->closeCursor();
   return $result;
 }

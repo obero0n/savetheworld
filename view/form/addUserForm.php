@@ -1,4 +1,4 @@
-<div class="container text-light bg-dark rounded mb-4 " style="height: 100vh; width: 900px;">
+<div class="container text-light bg-dark rounded mb-4 h-125 ">
   <form class="" action="" method="post">
     <div class="form-group">
       <label for="formGroupExampleInput">Nom</label>
@@ -30,6 +30,14 @@
     <div class="form-group">
       <label for="formGroupExampleInput2">Ville</label>
       <input type="text" class="form-control" id="formGroupExampleInput2" name="city" placeholder="Ville">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Pseudo</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" name="pseudo" placeholder="Pseudo">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Mot de passe</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" name="password" placeholder="Mot de passe">
     </div>
     <button type="submit" class="btn bgfront mt-2 text-light" style="width: 20%;">Submit</button>
   </form>

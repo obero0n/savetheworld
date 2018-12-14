@@ -25,8 +25,16 @@ function getRoutes() {
     ],
     "addUser" => [
       "front",
-      "showAddUser"
+      "showAddUser",
+      "status" => "user"
 
+    ],
+    "message" => [
+      "message",
+      "showMessage",
+    //   ["id" => ["integer"]
+    // ],
+    "status" => "user"
     ],
     "logout" => [
       "front",
@@ -43,13 +51,15 @@ function getRoutes() {
       "front",
       "eraser",
       ["id" => ["integer"]
-    ]
+    ],
+    "status" => "user"
     ],
     "updateUser" => [
       "front",
       "showUpdate",
         ["id" => ["integer"]
-  ]
+  ],
+  "status" => "user"
 ]
   ];
 }
